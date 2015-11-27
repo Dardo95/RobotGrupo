@@ -1,10 +1,10 @@
 import java.awt.Color;
 
 import acm.graphics.*;
-public class Cabeza extends acm.program.GraphicsProgram {
-	private static final int ANCHO_PANTALLA = 541;
-	private static final int ALTO_PANTALLA = 683;
-	GRect cabeza;
+public class Cabeza extends GCompound {
+	 static final int ANCHO_PANTALLA = 541;
+	 static final int ALTO_PANTALLA = 683;
+	GOval cabeza;
 	GImage nariz;
 	GImage ojoIzquiero;
 	GImage ojoDerecho;
@@ -19,7 +19,7 @@ public class Cabeza extends acm.program.GraphicsProgram {
 		
 		
 		
-		cabeza=new GRect(80,104);
+		cabeza=new GOval(80,104);
 		cabeza.setFilled(true);
 		cabeza.setFillColor(Color.pink);
 		add(cabeza,ANCHO_PANTALLA/2,ALTO_PANTALLA/5);
