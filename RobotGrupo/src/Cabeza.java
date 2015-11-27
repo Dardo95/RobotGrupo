@@ -9,12 +9,16 @@ public class Cabeza extends acm.program.GraphicsProgram {
 	GImage ojoIzquiero;
 	GImage ojoDerecho;
 	GImage boca;
+	GImage pelo;
 	public void run(){
 
 		hacerLaCabeza();
 
 	}
 	public void hacerLaCabeza(){
+		
+		
+		
 		cabeza=new GRect(80,104);
 		cabeza.setFilled(true);
 		cabeza.setFillColor(Color.pink);
@@ -35,6 +39,10 @@ public class Cabeza extends acm.program.GraphicsProgram {
 		nariz=new GImage("nariz.png");
 		nariz.setSize(40,40);
 		add(nariz,ANCHO_PANTALLA/2 +18,ALTO_PANTALLA/5 +34);
+		
+		pelo=new GImage("pelo.png");
+		pelo.setSize(97,90);
+		add(pelo,ANCHO_PANTALLA/2 -10,ALTO_PANTALLA/5-20);
 	}
 
 
